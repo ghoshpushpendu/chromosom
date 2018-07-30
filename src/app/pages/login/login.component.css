@@ -2,6 +2,7 @@
     background-color: rgb(255,255,255,0.3) !important;
     box-shadow: none;
     -webkit-box-shadow:none;
+    /* margin-top: 20px !important; */
 }
 
 .header-custom{
