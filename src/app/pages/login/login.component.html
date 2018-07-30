@@ -1,4 +1,4 @@
-<div class="ui centered card">
+<div class="ui centered card create-card">
   <div class="content">
     <img class="ui tiny image" src="assets/images/science.png" />
     <div class="center aligned header">CHROMOSOME</div>
@@ -7,27 +7,28 @@
     </div>
   </div>
   <div class="extra content">
-    <form class="ui form">
+    <form class="ui form" (submit)="submit()">
       <div class="field">
         <label>First Name</label>
-        <input type="text" name="first-name" placeholder="First Name">
+        <input type="text" name="fname" placeholder="First Name">
       </div>
       <div class="field">
         <label>Last Name</label>
-        <input type="text" name="last-name" placeholder="Last Name">
+        <input type="text" name="lname" placeholder="Last Name">
       </div>
       <div class="field">
         <label>Email</label>
-        <input type="text" name="last-name" placeholder="Last Name">
+        <input type="text" name="email" placeholder="Last Name">
       </div>
       <div class="field">
         <div class="ui checkbox">
-          <input type="checkbox" checked tabindex="0" class="hidden">
+          <input type="checkbox" name="check" checked tabindex="0" class="hidden">
           <label>I agree to the Terms and Conditions</label>
         </div>
       </div>
       <div class="ui center aligned">
-        <button class="positive ui button loading" type="submit"><i class="icon sign-in"></i> Try Now</button>
+        <button class="positive ui button">
+          <i class="icon sign-in"></i> Try Now</button>
       </div>
     </form>
   </div>
